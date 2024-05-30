@@ -1,0 +1,30 @@
+https://dev.azure.com/	
+
+Branching : Dev, QA, master
+
+
+Task: 
+
+dev 1 featuer branch -> feature/3112_HttpTrigger
+dev 2 featuer branch -> feature/3113_QueueTrigger
+
+dev 1 raise pull request feature/3112_HttpTrigger --> Dev -> Senior will approve it
+dev 2 raise pull request feature/3113_QueueTrigger --> Dev
+
+Dev is connected with dev environment -> ci/cd pipeline > https://www.abc-dev.com - 
+
+Senior (TL)
+
+TL raise pull request Dev to QA branch for dev 1 task testing - need to create task for dev 1 testing and assign to QA person
+QA will find issues for dev 1 task
+
+dev 1 will work on it on his feature branch(feature/3112_HttpTrigger)
+
+QA will testing dev 1 task completed and working as accepted. QA will go ahead dev 1 functionlity
+
+raise pull request QA to master for dev 1 task to deploy code for production(live).
+
+once PR will approve then via ci/cd pipeline dev 1 code will deploy to master and client will see his functionality in production environment. 
+
+-------------
+dev 1 -> will start task 2 to take Dev branch pull and create feature branch for task 2
