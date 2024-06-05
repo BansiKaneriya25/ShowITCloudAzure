@@ -1,0 +1,44 @@
+Docker
+
+- docker is platform for developing nd running application using containerization.
+- containers allow to developers package application with all dependencies and evnironment settings into standard unit for s/w developer.
+
+
+
+steps:
+- create container registery
+- must install docker desktop
+- web app publish to azure container registery
+- need to create azure app service s
+
+- when we run application as docker
+
+- docker image will be created and that contains source code, library, dependency
+- docker container will be created and latest docker image is attached with docker container while run the application
+- 
+
+advantage
+- all types of lang we can deploy in docker container
+- consistency
+- isolation
+- radip development
+- deployment via ci/cd pipeline
+
+
+command you can run in command powershell
+
+VS -> Tools -> Command Line -> Developer PowerShell
+
+we can't see our dlls, images, css file inside advance tool under azure app service
+
+
+exe - connect with db and find all student details with checking status and send email.
+1# way - console app and deploy to docker container - backed conti running (no need to create azure app service)
+2# web job -> need to azure app service
+
+
+docker login -u dockerwebappshowit -p password servername
+
+docker ps - list all container
+
+docker images  - list all images
