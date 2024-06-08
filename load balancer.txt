@@ -1,0 +1,8 @@
+Azure load balancer
+
+at the same time
+amazon website ---> US region - proper working
+but access from INDIA -> getting load
+
+
+load balancer 
