@@ -1,0 +1,65 @@
+Service Bus Queue
+
+- is a messaging infra component used in distributed application to facilities comminucation betw different services, component and process. It acts like as a message broker
+
+
+
+- web api
+- post api --> data send -> azure service bus queue  -> azure service bus queue function app
+
+//////////////////////////
+Sender/Receiver
+Publisher/Subscriber
+Producer/Consumer
+/////////////////////////
+
+How it works:
+1. Sender (Producer)  --> post api
+2. Queue  -> azure service bus queue
+3. Receiver (Consumer) --> azure service bus function app
+
+Life cicle:
+
+Fronet end - send data to request - post - debugger - api (1. Sender) ----> SendMessageAsync to Service Bus Queue (2. Queue ) ------> Function App (3. Receiver)
+
+
+
+Angular -> user our .net web api
+
+Angular -> form create user - save -> post
+
+Microservice
+
+module vise diff services as microserive
+
+1. Account -> azure app service (accountappservice)
+2. User -> azure app service (userappservice)
+
+Interview:
+
+api -> service
+
+We need to send the data to one api(service) to another service
+
+1. HttpClient - pure c# (.net)
+2. Azure Service Bus
+	1. Queue 
+		- One consumer per message
+		- FIFO - first in first out
+	2. Topic Subscriber 
+		- multiple subscriber receive message
+		- independent per subsciber
+
+Single Producer and single receiver - we need to user service bus queue
+Multiple receiver - we need to use service bus topic
+
+Queue
+Whatsapp - one to one chat
+
+Topic
+Whatsapp group - multiple user multiple subscriber
+
+
+Sender/Receiver
+Publisher/Subscriber
+Producer/Consumer
